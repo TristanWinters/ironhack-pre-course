@@ -1,6 +1,6 @@
 require "pry"
 
-def solve_cipher(input, shift_size) 
+def solve_cipher(input, shift_size = -3) 
     message = input.split(//)
 
     shifted_string = []
@@ -27,4 +27,4 @@ def solve_cipher(input, shift_size)
 
 end
 
-solve_cipher("p| uhdo qdph lv grqdog gxfn", -3)
+solve_cipher("p| uhdo qdph lv grqdog gxfn")
